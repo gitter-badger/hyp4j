@@ -1,0 +1,19 @@
+allprojects {
+    apply plugin: "java"
+    apply plugin: "idea"
+    apply plugin: "maven"
+
+    group = 'org.hyp4j'
+    version = "$hyp4jVersion"
+
+    repositories {
+        mavenLocal()
+        mavenCentral()
+    }
+
+    task wrapper(type: Wrapper) {
+        gradleVersion = '2.14'
+    }
+
+    defaultTasks 'clean', 'build'
+}
