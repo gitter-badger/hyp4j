@@ -2,4 +2,5 @@ include 'hyp4j-api'
 include 'hyp4j-apache-hc'
 include 'hyp4j-netty'
 include 'hyp4j-vertx'
-
+include 'hyp4j-jee6'
+include 'hyp4j-jee7'
